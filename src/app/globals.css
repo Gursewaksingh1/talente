@@ -1,0 +1,279 @@
+@import url(../assets/fonts/all-fonts.css);
+@import url(../styles/international-phone-input.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --scroller: #dfdfdf;
+  --hover-nav-color: #090215;
+  --section-color: #f0eef5;
+  --bg-gradient-color: #5e17eb;
+  --black-color: #000000;
+  --white-text: #ffffff;
+  --button-color: #3533cd;
+  --button-shadow: #cb6ce6;
+  --button-gradient: #ec27b699;
+  --button-border: #fbcc3e;
+  --border-gradient: #004aad;
+  --dialog-bg: #242424;
+  --bg-input: #333333;
+  --error-message: #f64e60;
+  --league-spartan-black: "Spartan-Black";
+  --league-spartan-bold: "Spartan-Bold";
+  --league-spartan-extra-bold: "Spartan-Extra-Bold";
+  --league-spartan-extra-light: "Spartan-Extra-Light";
+  --league-spartan-light: "Spartan-Light";
+  --league-spartan-medium: "Spartan-Medium";
+  --league-spartan-regular: "Spartan-Regular";
+  --league-spartan-semi-bold: "Spartan-SemiBold";
+  --league-spartan-thin: "Spartan-Thin";
+  --montserrat-black: "Montserrat-Black";
+  --montserrat-bold: "Montserrat-Bold";
+  --montserrat-extra-bold: "Montserrat-Extra-Bold";
+  --montserrat-extra-light: "Montserrat-Extra-Light";
+  --montserrat-light: "Montserrat-Light";
+  --montserrat-medium: "Montserrat-Medium";
+  --montserrat-regular: "Montserrat-Regular";
+  --montserrat-semi-bold: "Montserrat-SemiBold";
+  --montserrat-thin: "Montserrat-Thin";
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* body {
+  background: linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important;
+} */
+
+.borderNav {
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(0.25turn, transparent, var(--button-shadow), transparent);
+  border-image-slice: 1;
+  width: 100%;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--button-shadow);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.linear-bg {
+  background: linear-gradient(270deg, var(--button-color), var(--black-color), var(--button-color));
+  background-size: 200% 200%;
+  animation: gradient-flow 8s ease infinite;
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animates {
+  background-size: 200% 200%;
+  animation: back-forth 10s linear infinite;
+}
+
+@keyframes back-forth {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.3);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  color: var(--arrow-icon);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scroller);
+  border-radius: 14px;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+.shadowSubmit {
+  box-shadow: 0px 0px 10px 2px var(--button-border);
+}
+
+.spinGlobe {
+  animation: spin 35s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinCircle {
+  animation: spin-circle 8s linear infinite;
+}
+
+@keyframes spin-circle {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.MuiDrawer-paper {
+  margin-top: 72px;
+}
+
+.MuiList-root {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.menu .MuiModal-backdrop {
+  background: transparent !important;
+}
+
+.MuiListItem-gutters > a {
+  width: 100% !important;
+  transition: background 0.4s ease;
+}
+
+.MuiListItemText-root {
+  text-align: left !important;
+  color: var(--white-text);
+}
+
+.MuiListItemButton-gutters {
+  border-bottom: 1px solid #3f3f3f;
+}
+
+.last-child-no-border {
+  border-bottom: none;
+}
+
+.MuiListItem-gutters:hover {
+  background: linear-gradient(270deg, var(--button-color), var(--black-color), var(--button-color));
+  background-size: 200% 200%;
+  animation: backgroundAnimation 8s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.MuiListItemText-primary {
+  font-family: var(--league-spartan-medium);
+}
+
+.text-gradient1 {
+  background: linear-gradient(45deg, var(--button-shadow), var(--white-text));
+  background-size: 200% 200%;
+  animation: gradient-text1 4.5s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient2 {
+  background: linear-gradient(45deg, var(--button-shadow), var(--white-text));
+  background-size: 200% 200%;
+  animation: gradient-text1 4.5s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation-delay: 2s;
+}
+
+.text-gradient3 {
+  background: linear-gradient(45deg, var(--button-shadow), var(--white-text));
+  background-size: 200% 200%;
+  animation: gradient-text1 4.5s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation-delay: 3.5s;
+}
+
+@keyframes gradient-text1 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

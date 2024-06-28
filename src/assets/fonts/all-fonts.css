@@ -1,0 +1,217 @@
+/* League Spartan */
+
+@font-face {
+  font-family: "Spartan-Black";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(../fonts/LeagueSpartan/LeagueSpartan-Black.ttf);
+}
+
+.Spartan-Black {
+  font-family: var(--league-spartan-black);
+}
+@font-face {
+  font-family: "Spartan-Bold";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../fonts/LeagueSpartan/LeagueSpartan-Bold.ttf);
+}
+
+.Spartan-Bold {
+  font-family: var(--league-spartan-bold);
+}
+
+@font-face {
+  font-family: "Spartan-Extra-Bold";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/LeagueSpartan/LeagueSpartan-ExtraBold.ttf);
+}
+
+.Spartan-Extra-Bold {
+  font-family: var(--league-spartan-extra-bold);
+}
+
+@font-face {
+  font-family: "Spartan-Extra-Light";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/LeagueSpartan/LeagueSpartan-ExtraLight.ttf);
+}
+
+.Spartan-Extra-Light {
+  font-family: var(--league-spartan-extra-light);
+}
+
+@font-face {
+  font-family: "Spartan-Light";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/LeagueSpartan/LeagueSpartan-Light.ttf);
+}
+
+.Spartan-Light {
+  font-family: var(--league-spartan-light);
+}
+
+@font-face {
+  font-family: "Spartan-Medium";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/LeagueSpartan/LeagueSpartan-Medium.ttf);
+}
+
+.Spartan-Medium {
+  font-family: var(--league-spartan-medium);
+}
+
+@font-face {
+  font-family: "Spartan-Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/LeagueSpartan/LeagueSpartan-Regular.ttf);
+}
+
+.Spartan-Regular {
+  font-family: var(--league-spartan-regular);
+}
+
+@font-face {
+  font-family: "Spartan-SemiBold";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/LeagueSpartan/LeagueSpartan-SemiBold.ttf);
+}
+
+.Spartan-SemiBold {
+  font-family: var(--league-spartan-semi-bold);
+}
+
+@font-face {
+  font-family: "Spartan-Thin";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../fonts/LeagueSpartan/LeagueSpartan-Thin.ttf);
+}
+
+.Spartan-Thin {
+  font-family: var(--league-spartan-thin);
+}
+
+/* Montserrat */
+
+@font-face {
+  font-family: "Montserrat-Black";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(../fonts/Montserrat/Montserrat-Black.ttf);
+}
+
+.Montserrat-Black {
+  font-family: var(--montserrat-black);
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+.Montserrat-Bold {
+  font-family: var(--montserrat-bold);
+}
+
+@font-face {
+  font-family: "Montserrat-Extra-Bold";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Montserrat/Montserrat-ExtraBold.ttf);
+}
+
+.Montserrat-Extra-Bold {
+  font-family: var(--montserrat-extra-bold);
+}
+
+@font-face {
+  font-family: "Montserrat-Extra-Light";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Montserrat/Montserrat-ExtraLight.ttf);
+}
+
+.Montserrat-Extra-Light {
+  font-family: var(--montserrat-extra-light);
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+.Montserrat-Light {
+  font-family: var(--montserrat-light);
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+.Montserrat-Medium {
+  font-family: var(--montserrat-medium);
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+.Montserrat-Regular {
+  font-family: var(--montserrat-regular);
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+
+.Montserrat-SemiBold {
+  font-family: var(--montserrat-bold);
+}
+
+@font-face {
+  font-family: "Montserrat-Thin";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../fonts/Montserrat/Montserrat-Thin.ttf);
+}
+
+.Montserrat-Thin {
+  font-family: var(--montserrat-thin);
+}

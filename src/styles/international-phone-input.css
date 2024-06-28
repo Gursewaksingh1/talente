@@ -1,0 +1,20 @@
+/* waitlist modal */
+.waitlist-modal .react-international-phone-input-container .react-international-phone-country-selector ul.react-international-phone-country-selector-dropdown {
+  position: fixed;
+  top: calc(50% + 130px);
+  left: calc(50% - 175px);
+}
+
+.waitlist-modal .react-international-phone-input-container {
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.waitlist-modal .react-international-phone-input-container .react-international-phone-country-selector button.react-international-phone-country-selector-button {
+  height: 48px;
+  padding-left: 6px;
+}
+
+.waitlist-modal .react-international-phone-input-container .react-international-phone-input {
+  height: 48px;
+}
